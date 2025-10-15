@@ -1,5 +1,4 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, TouchableOpacity, View } from "react-native";
+import { StatusBar, Text, TouchableOpacity, View } from "react-native";
 import { createStyles, useTheme } from "react-native-buildstrap";
 import { customStyles } from "../styles/CustomStyles";
 import { Ionicons } from "@expo/vector-icons";
@@ -18,7 +17,7 @@ export default function HomeScreen() {
         {isDark ? <Ionicons name="sunny" size={24} color="white"></Ionicons> : <Ionicons name="moon" size={24} color="white"></Ionicons>}
       </TouchableOpacity>
       <Text style={[styles.mt2, styles.text]}>Meu estilo próprio</Text>
-      <StatusBar barStyle={isDark ? "light-content" : "dark-content"} />
+      <StatusBar barStyle={isDark ? "light-content" : "dark-content"}/>
     </View>
   );
 }
